@@ -1,0 +1,58 @@
+{
+  "name": "@agogpixel/pgmmv-resource-support",
+  "description": "Resource support for Pixel Game Maker MV scripting.",
+  "license": "UNLICENSED",
+  "author": "kidthales <kidthales@agogpixel.com>",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/agogpixel/pgmmv-resource-support"
+  },
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "scripts": {
+    "postinstall": "husky install",
+    "start": "jest --watch",
+    "test": "jest --coverage",
+    "prebuild": "cavy clean dist",
+    "build": "tsc -p tsconfig.build.json",
+    "postbuild": "cavy copy dist && shx cp LICENSE README.md dist",
+    "smoke-test": "cd test/smoke && npm install && npm test",
+    "build-docs": "typedoc --out dist/docs --entryPointStrategy expand src/index.ts && shx cp LICENSE dist/docs",
+    "create-tarball": "cavy pack dist",
+    "publish-tarball": "cavy publish dist",
+    "lint": "cavy lint --all",
+    "lint-fix": "cavy lint --all --fix",
+    "clean": "cavy clean --all"
+  },
+  "peerDependencies": {
+    "@agogpixel/pgmmv-ts": ">=0.1.0"
+  },
+  "devDependencies": {
+    "@agogpixel/cavy": "~0.1.1",
+    "@agogpixel/pgmmv-ts": "~0.1.0",
+    "@types/jest": "~27.4.1",
+    "@types/node": "~14.17.34",
+    "@typescript-eslint/eslint-plugin": "~5.13.0",
+    "@typescript-eslint/parser": "~5.13.0",
+    "eslint": "~8.10.0",
+    "eslint-config-prettier": "~8.4.0",
+    "eslint-plugin-prettier": "~4.0.0",
+    "husky": "~7.0.4",
+    "jest": "^27.5.1",
+    "lint-staged": "~12.3.4",
+    "prettier": "~2.5.1",
+    "shx": "~0.3.4",
+    "ts-jest": "^27.1.3",
+    "typedoc": "~0.22.12",
+    "typescript": "~4.5.5"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "lint-staged": {
+    "*.(js|ts)": "eslint --cache --fix",
+    "*.(json|md|yml)": "prettier --write"
+  }
+}

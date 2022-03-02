@@ -1,0 +1,4 @@
+/**
+ *
+ */
+export type ReleaseLock = () => void;
