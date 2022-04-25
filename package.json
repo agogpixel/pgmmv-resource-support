@@ -3,7 +3,7 @@
   "description": "Resource support for Pixel Game Maker MV scripting.",
   "license": "UNLICENSED",
   "author": "kidthales <kidthales@agogpixel.com>",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/agogpixel/pgmmv-resource-support"
