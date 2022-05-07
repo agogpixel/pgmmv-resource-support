@@ -1,0 +1,14 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": [
+    "./src/cache",
+    "./src/json/logic",
+    "./src/json",
+    "./src/locks",
+    "./src/module",
+    "./src/string",
+    "./src/time",
+    "./src"
+  ],
+  "out": "dist/docs"
+}

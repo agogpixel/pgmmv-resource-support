@@ -5,8 +5,6 @@ on:
       - '**'
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+-*'
-env:
-  PRIVATE_REGISTRY_URL: https://npm.pkg.github.com
 jobs:
   Build-And-Smoke-Test:
     name: Build & Smoke Test
@@ -16,10 +14,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Setup Dependencies
         uses: ./.github/actions/setup-dependencies
-        with:
-          registry-url: ${{ env.PRIVATE_REGISTRY_URL }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GHP_TOKEN }}
       - name: Build & Smoke Test
         uses: ./.github/actions/build-and-smoke-test
   Prepare-Pre-Release:
@@ -31,10 +25,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Setup Dependencies
         uses: ./.github/actions/setup-dependencies
-        with:
-          registry-url: ${{ env.PRIVATE_REGISTRY_URL }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GHP_TOKEN }}
       - name: Create Tarball
         uses: ./.github/actions/create-tarball
         with:
@@ -58,4 +48,5 @@ jobs:
       - name: Publish Pre-Release To Package Registries
         uses: ./.github/actions/publish-package
         with:
+          npm-auth-token: '${{ secrets.NPM_TOKEN }}'
           github-auth-token: '${{ secrets.GHP_TOKEN }}'
