@@ -1,11 +1,13 @@
 /**
  * Exports resource locks configuration API.
  *
- * @module pgmmv-resource-support/locks/resource-locks-config.interface
+ * @module locks/resource-locks-config.interface
  */
 
 /**
  * Resource locks configuration.
+ *
+ * @typeParam K Key type (default: `string`).
  */
 export interface ResourceLocksConfig<K extends number | string | symbol = string> {
   /**

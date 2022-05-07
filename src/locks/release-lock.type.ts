@@ -1,7 +1,7 @@
 /**
  * Exports release lock callback type.
  *
- * @module pgmmv-resource-support/locks/release-lock.type
+ * @module locks/release-lock.type
  */
 
 /**

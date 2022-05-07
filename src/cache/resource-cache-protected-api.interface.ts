@@ -1,11 +1,14 @@
 /**
  * Exports resource cache protected API.
  *
- * @module pgmmv-resource-support/cache/resource-cache-protected-api.interface
+ * @module cache/resource-cache-protected-api.interface
  */
 
 /**
  * A simple resource cache protected API. Facilitates object inheritence.
+ *
+ * @typeParam T Key type.
+ * @typeParam U Value type.
  */
 export interface ResourceCacheProtectedApi<T extends number | string | symbol = string, U = unknown> {
   /**

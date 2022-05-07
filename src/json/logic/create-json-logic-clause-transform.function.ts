@@ -1,7 +1,7 @@
 /**
  * Exports JSON logic clause transform factory function.
  *
- * @module pgmmv-resource-support/json/logic/json-logic-clause-transform.function
+ * @module json/logic/json-logic-clause-transform.function
  */
 import type { JsonValue } from '@agogpixel/pgmmv-ts/api/types/json';
 
@@ -31,6 +31,9 @@ import type { JsonLogicConstraint } from './json-logic-constraint.type';
  * Create a JSON logic clause transform function based on specified constraint
  * factory.
  *
+ * @typeParam K Clause key type.
+ * @typeParam P Clause paramater/value type.
+ * @typeParam Q Constraint parameter types.
  * @param constraintFactory Function that generats constraints from
  * clauses/conditions.
  * @returns JSON logic clause transform function.

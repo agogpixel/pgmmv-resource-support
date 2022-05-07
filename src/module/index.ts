@@ -6,7 +6,7 @@
  * the global window object that maps to an object (which contains our modules).
  * Default value is `myModules`.
  *
- * @module pgmmv-resource-support/module
+ * @module module
  */
 export { getModule } from './get-module.function';
 export { hasModule } from './has-module.function';

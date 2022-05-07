@@ -1,7 +1,7 @@
 /**
  * Exports JSON logic support APIs & implementations.
  *
- * @module pgmmv-resource-support/json/logic
+ * @module json/logic
  */
 export * from './create-json-logic-clause-transform.function';
 export * from './json-logic-clause-transform.type';

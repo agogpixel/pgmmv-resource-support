@@ -1,7 +1,7 @@
 /**
  * Exports to-JSON utility function.
  *
- * @module pgmmv-resource-support/json/to-json.function
+ * @module json/to-json.function
  */
 import type { JsonArray, JsonObject, JsonValue } from '@agogpixel/pgmmv-ts/api/types/json';
 

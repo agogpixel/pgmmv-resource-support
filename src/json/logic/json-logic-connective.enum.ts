@@ -1,7 +1,7 @@
 /**
  * Exports JSON logic connective enumeration.
  *
- * @module pgmmv-resource-support/json/logic/json-logic-connective.enum
+ * @module json/logic/json-logic-connective.enum
  */
 
 /**

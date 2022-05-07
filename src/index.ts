@@ -1,7 +1,7 @@
 /**
  * Exports PGMMV resource support APIs and implementations.
  *
- * @module pgmmv-resource-support
+ * @module
  */
 export * from './cache';
 export * from './json';

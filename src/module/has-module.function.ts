@@ -1,7 +1,7 @@
 /**
  * Exports helper method for testing module existence.
  *
- * @module pgmmv-resource-support/module/has-module.function
+ * @module module/has-module.function
  */
 import { isRootModuleBooted } from './is-root-module-booted.function';
 import { rootModuleName } from './root-module-name.const';

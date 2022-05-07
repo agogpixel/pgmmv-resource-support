@@ -1,7 +1,7 @@
 /**
  * Exports JSON logic clause type.
  *
- * @module pgmmv-resource-support/json/logic/json-logic-clause.type
+ * @module json/logic/json-logic-clause.type
  */
 import type { JsonValue } from '@agogpixel/pgmmv-ts/api/types/json';
 
@@ -10,6 +10,9 @@ import type { JsonLogicConnective } from './json-logic-connective.enum';
 
 /**
  * JSON logic clause type.
+ *
+ * @typeParam K Clause key type.
+ * @typeParam P Clause paramater/value type.
  */
 export type JsonLogicClause<K extends number | string, P extends JsonValue> =
   | JsonLogicCondition<K, P>

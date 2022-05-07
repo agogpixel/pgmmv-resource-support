@@ -1,7 +1,7 @@
 /**
  * Exports resource locks manager factory function.
  *
- * @module pgmmv-resource-support/locks/create-resource-locks-manager.function
+ * @module locks/create-resource-locks-manager.function
  */
 import type { ResourceLocksManagerProtectedApi } from './resource-locks-manager-protected-api.interface';
 import type { ResourceLocksManager } from './resource-locks-manager.interface';
@@ -27,6 +27,7 @@ import type { ResourceLocks } from './resource-locks.interface';
  * Create an object instance that implements the {@link ResourceLocksManager}
  * interface. This implementation tracks individual lock states in-memory.
  *
+ * @typeParam K Key type (default: `string`).
  * @param internal Provide an object to 'inherit' a reference to the resource
  * locks manager's internal {@link ResourceLocksManagerProtectedApi}
  * implementation.

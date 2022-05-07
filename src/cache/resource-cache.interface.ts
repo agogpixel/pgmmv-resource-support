@@ -1,11 +1,14 @@
 /**
  * Exports resource cache public API.
  *
- * @module pgmmv-resource-support/cache/resource-cache.interface
+ * @module cache/resource-cache.interface
  */
 
 /**
  * A simple resource cache API. Supports basic CRUD operations.
+ *
+ * @typeParam T Key type.
+ * @typeParam U Value type.
  */
 export interface ResourceCache<T extends number | string | symbol = string, U = unknown> {
   /**
@@ -30,6 +33,7 @@ export interface ResourceCache<T extends number | string | symbol = string, U = 
   /**
    * Get a resource, referenced by specified key, from the cache.
    *
+   * @typeParam V Return value type (default: `U`).
    * @param key Key that maps to some resource within the cache.
    * @returns A resource referenced by specified key, or `undefined` if not
    * found.

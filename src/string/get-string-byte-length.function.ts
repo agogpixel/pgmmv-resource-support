@@ -1,7 +1,7 @@
 /**
  * Exports string byte length calculation method.
  *
- * @module pgmmv-resource-support/string/get-string-byte-length.function
+ * @module string/get-string-byte-length.function
  */
 
 ////////////////////////////////////////////////////////////////////////////////

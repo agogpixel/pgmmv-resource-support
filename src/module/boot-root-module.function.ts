@@ -1,7 +1,7 @@
 /**
  * Exports helper method for booting the root module.
  *
- * @module pgmmv-resource-support/module/boot-root-module.function
+ * @module module/boot-root-module.function
  */
 import { rootModuleName } from './root-module-name.const';
 import { isRootModuleBooted } from './is-root-module-booted.function';

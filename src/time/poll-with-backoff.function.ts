@@ -1,7 +1,7 @@
 /**
  * Exports poll with interval function.
  *
- * @module pgmmv-resource-support/time/poll-with-interval.function
+ * @module time/poll-with-interval.function
  */
 
 ////////////////////////////////////////////////////////////////////////////////

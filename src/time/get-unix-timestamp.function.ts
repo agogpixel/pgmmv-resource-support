@@ -1,7 +1,7 @@
 /**
  * Exports unix timestamp function.
  *
- * @module pgmmv-resource-support/time/get-unix-timestamp.function
+ * @module time/get-unix-timestamp.function
  */
 
 ////////////////////////////////////////////////////////////////////////////////

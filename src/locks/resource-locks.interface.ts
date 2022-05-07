@@ -1,7 +1,7 @@
 /**
  * Exports resource locks API.
  *
- * @module pgmmv-resource-support/locks/resource-locks.interface
+ * @module locks/resource-locks.interface
  */
 
 /**

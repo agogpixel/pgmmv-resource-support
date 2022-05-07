@@ -1,7 +1,7 @@
 /**
  * Exports time utility methods.
  *
- * @module pgmmv-resource-support/time
+ * @module time
  */
 export * from './get-unix-timestamp.function';
 export * from './poll-with-backoff.function';

@@ -1,7 +1,7 @@
 /**
  * Exports cache APIs & implementations.
  *
- * @module pgmmv-resource-support/cache
+ * @module cache
  */
 export * from './create-resource-cache.function';
 export * from './resource-cache-protected-api.interface';

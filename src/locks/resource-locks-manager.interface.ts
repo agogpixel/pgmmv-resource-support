@@ -1,7 +1,7 @@
 /**
  * Exports resource locks manager public API.
  *
- * @module pgmmv-resource-support/locks/resource-locks-manager.interface
+ * @module locks/resource-locks-manager.interface
  */
 
 import type { ReleaseLock } from './release-lock.type';
@@ -10,6 +10,8 @@ import type { ResourceLocksConfig } from './resource-locks-config.interface';
 /**
  * A simple resource locks manager API. Supports basic CRD operations on lock
  * state & the ability to acquire these locks.
+ *
+ * @typeParam K Key type (default: `string`).
  */
 export interface ResourceLocksManager<K extends number | string | symbol = string> {
   /**

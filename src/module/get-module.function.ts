@@ -1,7 +1,7 @@
 /**
  * Exports helper method for retrieving a module.
  *
- * @module pgmmv-resource-support/module/get-module.function
+ * @module module/get-module.function
  */
 import { hasModule } from './has-module.function';
 import { rootModuleName } from './root-module-name.const';
@@ -25,6 +25,7 @@ import { rootModuleName } from './root-module-name.const';
 /**
  * Get module referenced by specified key.
  *
+ * @typeParam T Specify return type (default: `object`).
  * @param key Module key.
  * @returns Module referenced by key, `undefined` otherwise.
  * @public

@@ -1,7 +1,7 @@
 /**
  * Exports lock APIs & implementations.
  *
- * @module pgmmv-resource-support/locks
+ * @module locks
  */
 export * from './create-resource-locks-manager.function';
 export * from './release-lock.type';

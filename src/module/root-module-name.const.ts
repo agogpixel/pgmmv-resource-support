@@ -1,7 +1,7 @@
 /**
  * Exports constant representing root module name.
  *
- * @module pgmmv-resource-support/module/root-module-name.const
+ * @module module/root-module-name.const
  */
 
 /**

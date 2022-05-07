@@ -1,7 +1,7 @@
 /**
  * Exports helper method for setting a module.
  *
- * @module pgmmv-resource-support/module/set-module.function
+ * @module module/set-module.function
  */
 import { bootRootModule } from './boot-root-module.function';
 import { isRootModuleBooted } from './is-root-module-booted.function';
@@ -26,6 +26,7 @@ import { rootModuleName } from './root-module-name.const';
 /**
  * Set module referenced by specified key.
  *
+ * @typeParam T Type of module being set.
  * @param key Module key.
  * @param module Module reference.
  * @returns True when set successfully, false otherwise.

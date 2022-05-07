@@ -1,7 +1,7 @@
 /**
  * Exports resource cache factory function.
  *
- * @module pgmmv-resource-support/cache/create-resource-cache.function
+ * @module cache/create-resource-cache.function
  */
 import type { ResourceCache } from './resource-cache.interface';
 import type { ResourceCacheProtectedApi } from './resource-cache-protected-api.interface';
@@ -26,6 +26,8 @@ import type { ResourceCacheProtectedApi } from './resource-cache-protected-api.i
  * Create an object instance that implements the {@link ResourceCache}
  * interface. This is an in-memory cache with no TTL support.
  *
+ * @typeParam T Key type.
+ * @typeParam U Value type.
  * @param internal Provide an object to 'inherit' a reference to the resource
  * cache's internal {@link ResourceCacheProtectedApi} implementation.
  * @returns An object instance that implements the {@link ResourceCache}
