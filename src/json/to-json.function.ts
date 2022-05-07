@@ -3,8 +3,7 @@
  *
  * @module pgmmv-resource-support/json/to-json.function
  */
-
-import type { JsonArray, JsonObject, JsonValue } from '@agogpixel/pgmmv-ts/api/types';
+import type { JsonArray, JsonObject, JsonValue } from '@agogpixel/pgmmv-ts/api/types/json';
 
 ////////////////////////////////////////////////////////////////////////////////
 // Public Static Properties
