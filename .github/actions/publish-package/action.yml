@@ -1,10 +1,10 @@
 name: Publish Package
 description: Publishes package tarball to all remote package registries.
 inputs:
-  #  npm-auth-token:
-  #    description: NPM Auth Token.
-  #    required: true
-  #    default: ''
+  npm-auth-token:
+    description: NPM Auth Token.
+    required: true
+    default: ''
   github-auth-token:
     description: GitHub Auth Token.
     required: true
@@ -20,10 +20,10 @@ runs:
       uses: actions/download-artifact@v2
       with:
         name: ${{ inputs.package-artifacts-name }}
-    #    - name: Publish Package (NPM)
-    #      uses: ./.github/actions/publish-package/to-registry
-    #      env:
-    #        NODE_AUTH_TOKEN: ${{ inputs.npm-auth-token }}
+    - name: Publish Package (NPM)
+      uses: ./.github/actions/publish-package/to-registry
+      env:
+        NODE_AUTH_TOKEN: ${{ inputs.npm-auth-token }}
     - name: Publish Package (GitHub)
       uses: ./.github/actions/publish-package/to-registry
       with:
