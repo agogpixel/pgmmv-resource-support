@@ -338,7 +338,7 @@ function removeComma(str: string, newline: boolean) {
   if (!newline) {
     tempArr = str.split('');
   } else {
-    tempArr = str.trimEnd().split('');
+    tempArr = str.trimRight().split('');
   }
 
   tempArr.pop();
